@@ -1,0 +1,163 @@
+interface StarSign {
+  id: number
+  image: string
+  starChart: string
+  latinName: string
+  element: string
+  birthday: string
+  birthstone: string
+  strengths: string[]
+  weaknesses: string[]
+  horoscope: string
+}
+
+export type StarSignData = Record<string, StarSign>
+
+const data: StarSignData = {
+  Capricorn: {
+    id: 1,
+    image: '01-capricorn.png',
+    starChart: '01-capricorn-stars.webp',
+    latinName: 'Capricornus',
+    element: 'Earth',
+    birthday: 'Dec 22 to Jan 19',
+    birthstone: 'Garnet',
+    strengths: ['Patient', 'Disciplined', 'Ambitious'],
+    weaknesses: ['Introverted', 'Stubborn'],
+    horoscope: `If certain projects or tasks have seemed difficult to finish, take advantage of the energy provided by today's planetary aspects. This energy will give you all the zip you need, Capricorn. It's a good time to meet with others to discuss important matters. Your communication and cooperation skills will be increased. You can make decisions much more quickly than usual. Have a productive day!If certain projects or tasks have seemed difficult to finish, take advantage of the energy provided by today's planetary aspects. This energy will give you all the zip you need, Capricorn. It's a good time to meet with others to discuss important matters. Your communication and cooperation skills will be increased. You can make decisions much more quickly than usual. Have a productive day!`,
+  },
+  Aquarius: {
+    id: 2,
+    image: '02-aquarius.png',
+    starChart: '02-aquarius-stars.webp',
+    latinName: 'Aquarius',
+    element: 'Air',
+    birthday: 'Jan 20 to Feb 18',
+    birthstone: 'Amethyst',
+    strengths: ['Helpful', 'Tolerant', 'Creative'],
+    weaknesses: ['Inconstant', 'Tense'],
+    horoscope: `You might feel more energetic than you have in a long time, Aquarius. The day's planetary aspects offer a powerful energy that will increase your mental acuity and physical strength, and this can really help you tackle and finish any tasks that have been piling up. If you manage to accomplish so much that you have time to spare, help others lighten their load. Tend to your own first, however.`,
+  },
+  Pisces: {
+    id: 3,
+    image: '03-pisces.png',
+    starChart: '03-pisces-stars.webp',
+    latinName: 'Pisces',
+    element: 'Water',
+    birthday: 'Feb 19 to Mar 20',
+    birthstone: 'Aquamarine',
+    strengths: ['Empathetic', 'Cheerful', 'Helpful'],
+    weaknesses: ['Overly sensitive', 'Easily influenced'],
+    horoscope: `If there's something you want to take on, Pisces, today's the day. The celestial aspects will see an increase in physical and mental strength that can work wonders for you. Put any insecurity or lack of confidence in the trash, and take the steps you need to tackle your project or goal. You have the ability to make sound judgments, so put your trust in this talent. Take steps to get what you want.`,
+  },
+  Aries: {
+    id: 4,
+    image: '04-aries.png',
+    starChart: '04-aries-stars.webp',
+    latinName: 'Aries',
+    element: 'Fire',
+    birthday: 'Mar 21 to Apr 19',
+    birthstone: 'Diamond',
+    strengths: ['Determined', 'Confident', 'Honest'],
+    weaknesses: ['Impatient', 'Thoughtless', 'Unpredictable'],
+    horoscope: `If you've been feeling sluggish lately, Aries, today will see a surge in energy that will greatly increase your creativity and physical strength. Seize the opportunity to get into the fresh air for a sports activity or long walk. Exercise can direct your physical energy and give your mind a chance to clear. Don't be surprised if you discover more clarity and focus afterward. Make the most of it.`,
+  },
+  Taurus: {
+    id: 5,
+    image: '05-taurus.png',
+    starChart: '05-taurus-stars.webp',
+    latinName: 'Taurus',
+    element: 'Earth',
+    birthday: 'Apr 20 to May 20',
+    birthstone: 'Emerald',
+    strengths: ['Calm', 'Empathetic', 'Loyal'],
+    weaknesses: ['Stubborn', 'Inflexible', 'Headstrong'],
+    horoscope: `Taurus, if there's something interesting that you want to try, go for it. Adventure brings excitement, creative flow, and energy, and these are essential to you. Yours is a highly artistic nature. Continual stimulation is required to keep your psyche healthy. Experience something new today. Even if it's just a walk to a place you've never been, it will give you the adrenaline you need.`,
+  },
+  Gemini: {
+    id: 6,
+    image: '06-gemini.png',
+    starChart: '06-gemini-stars.webp',
+    latinName: 'Gemini',
+    element: 'Air',
+    birthday: 'May 21 to Jun 21',
+    birthstone: 'Pearl',
+    strengths: ['Curious', 'Organized', 'Intelligent'],
+    weaknesses: ['Inconsistent', 'Arrogant', 'Impatient'],
+    horoscope: `Today's energy will help you take steps toward getting things in order, Gemini. Tackle the drawers, closets, storage rooms, and cabinets. Organization is a good activity for today. Creating order brings a sense of peace and personal control. Mental organization like goal setting, budgeting, or scheduling will add to this feeling. Sift through and clean out as many corners as you can.`,
+  },
+  Cancer: {
+    id: 7,
+    image: '07-cancer.png',
+    starChart: '07-cancer-stars.webp',
+    latinName: 'Cancer',
+    element: 'Water',
+    birthday: 'Jun 22 to Jul 22',
+    birthstone: 'Ruby',
+    strengths: ['Empathetic', 'Helpful', 'Friendly'],
+    weaknesses: ['Moody', 'Resentful', 'Cautious'],
+    horoscope: `The energy of the day makes you ready for almost anything, Cancer. Given your sometimes radical approach to whatever you do, you may need to rein yourself in. You also have a humanitarian approach to life. If the pursuit of your wants hurts others, it could create serious internal conflict. With this high energy, think your plans through before taking action to remain true to your values.`,
+  },
+  Leo: {
+    id: 8,
+    image: '08-leo.png',
+    starChart: '08-leo-stars.webp',
+    latinName: 'Leo',
+    element: 'Fire',
+    birthday: 'Jul 23 to Aug 22',
+    birthstone: 'Peridot',
+    strengths: ['Positive', 'Brave', 'Reliable'],
+    weaknesses: ['Stormy', 'Arrogant', 'Dominant'],
+    horoscope: `Today may be an excellent time to take a second shot at something that didn't work out the first time, Leo. Falling flat on your face can damage your confidence and self-esteem. But failure and rejection are parts of life, and they really do add character. By going back into the ring, you ensure that the character you're adding to is courageous, and through perseverance, successful.`,
+  },
+  Virgo: {
+    id: 9,
+    image: '09-virgo.png',
+    starChart: '09-virgo-stars.webp',
+    latinName: 'Virgo',
+    element: 'Earth',
+    birthday: 'Aug 23 to Sept 22',
+    birthstone: 'Sapphire',
+    strengths: ['Reliable', 'Organized', 'Cheerful'],
+    weaknesses: ['Stubborn', 'Perfectionist'],
+    horoscope: `Your ability to find innovative approaches to tasks may serve you well today, Virgo. Today is full of added energy and mental acuity. You will find that most things come easily. With detail-oriented projects, take extra time to think of the possibilities. Try to see things from all angles. There may be far more choices than you thought. Make the most of this by jotting down your random ideas.`,
+  },
+  Libra: {
+    id: 10,
+    image: '10-libra.png',
+    starChart: '10-libra-stars.webp',
+    latinName: 'Libra',
+    element: 'Air',
+    birthday: 'Sept 23 to Oct 22',
+    birthstone: 'Opal',
+    strengths: ['Balanced', 'Diplomatic', 'Cheerful'],
+    weaknesses: ['Indecisive', 'Uncertain'],
+    horoscope: `If long-overdue work has piled up, Libra, today is the day to dig in. Added strength and mental acuity are in the air, and the projects that you couldn't get to before will be readily accomplished. Make the most of the energy provided by the planetary aspects. Don't put anything off. If you procrastinate, the pile will just get bigger. Do what needs to be done and you will feel great afterward.`,
+  },
+  Scorpio: {
+    id: 11,
+    image: '11-scorpio.png',
+    starChart: '11-scorpio.png-stars.webp',
+    latinName: 'Scorpio',
+    element: 'Water',
+    birthday: 'Oct 23 to Nov 21',
+    birthstone: 'Topaz',
+    strengths: ['Sensitive', 'Hardworking', 'Brave'],
+    weaknesses: ['Suspicious', 'Uncompromising'],
+    horoscope: `Don't worry about being productive today, Scorpio. Thanks to the high energy provided by the planetary aspects, it might be one of the most efficient days you've had for a long time. Dig in your heels and go, go, go. Things will be accomplished in no time flat, with some to spare at that. If you have a creative hobby, enjoy working on it. You will find it rewarding.`,
+  },
+  Sagittarius: {
+    id: 12,
+    image: '12-sagittarius.png',
+    starChart: '12-sagittarius-stars.webp',
+    latinName: 'Sagittarius',
+    element: 'Fire',
+    birthday: 'Nov 22 to Dec 21',
+    birthstone: 'Tanzanite',
+    strengths: ['Optimistic', 'Open', 'Honest'],
+    weaknesses: ['Know-all', 'Insensitive'],
+    horoscope: `Expect an added boost to your physical energy today, Sagittarius. It's an excellent day to clean out closets and storage rooms. Some exercise like biking or walking will be most enjoyable. It may also prove to be well worth your while to sit down and look at your goals. Are you where you wanted to be at this stage of your life? Are there changes that need to be made? Exercise both your brain and body.`,
+  },
+}
+
+export default data

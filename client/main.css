@@ -1,0 +1,96 @@
+body {
+  background-color: #faf8f1;
+  color: #0a1520;
+  font-family: 'Poppins', sans-serif;
+  /* background-image: url(../images/background-merge.jpg); */
+  background-size: cover;
+}
+.main,
+.title {
+  display: flex;
+  flex-direction: row;
+}
+
+.title img {
+  height: 5rem;
+  width: 5rem;
+  padding-right: 30px;
+}
+
+.main div {
+  margin: 0px 10px 0px 10px;
+}
+
+a {
+  text-decoration-line: none;
+}
+
+a.active {
+  font-weight: bold;
+}
+
+img {
+  max-height: 200px;
+}
+.nav-link {
+  text-decoration: none;
+  color: rgb(10, 84, 37);
+}
+.activeNav {
+  font-weight: bold;
+  color: rgb(100, 0, 150);
+}
+.nav-list {
+  list-style-type: disclosure-closed;
+}
+/* Home Component */
+
+/* .home h2,
+p {
+  text-align: center;
+  color: rgb(5, 6, 6);
+  width: 80%;
+  margin: auto;
+} */
+
+.homeImg {
+  text-align: center;
+}
+
+.home img {
+  width: 200px;
+  height: 200px;
+  padding: 20px;
+}
+.star-sign-item {
+  text-align: center;
+  background-color: bisque;
+  border-bottom: 1px solid rgb(8, 61, 79);
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 20%;
+  align-items: center;
+}
+
+.symbol {
+  width: 30px;
+  height: 30px;
+  margin-bottom: 8px;
+}
+
+.star-sign-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* .star-sign-name {
+  font-size: 16px;
+  font-weight: bold;
+  color: aqua;
+} */
+.star-sign-birthday {
+  font-size: 14px;
+  color: #666;
+}
